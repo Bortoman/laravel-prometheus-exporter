@@ -1,7 +1,5 @@
 # laravel-prometheus-exporter
 
-[![Build Status](https://travis-ci.org/gorerider/laravel-prometheus-exporter.svg?branch=master)](https://travis-ci.org/gorerider/laravel-prometheus-exporter)
-
 This is a fork of [traum-ferienwohnungen/laravel-prometheus-exporter](https://github.com/traum-ferienwohnungen/laravel-prometheus-exporter)
 with updated dependencies. Main goal of this work is to make the lib compatible with Laravel 7 and Lumen 7 running on PHP 7.4.
 
@@ -11,7 +9,7 @@ A prometheus exporter for the Laravel and the Lumen web framework.
 It tracks latency and request counts by request method, route path and response code.
 
 ## Installation
-`composer require gorerider/laravel-prometheus-exporter`
+`composer require bortoman/laravel-prometheus-exporter`
 
 ### Adapters
 Then choose from three storage adapters:
@@ -43,7 +41,7 @@ In `config/app.php` (if not already there):
     /*
      * Package Service Providers...
      */
-    gorerider\PrometheusExporter\Providers\LaravelServiceProvider::class,
+    Bortoman\PrometheusExporter\Providers\LaravelServiceProvider::class,
     ...
 ]
 ```
@@ -52,7 +50,7 @@ In `config/app.php` (if not already there):
 #### Register the ServiceProvider
 In `bootstrap/app.php`
 ```
-$app->register(gorerider\PrometheusExporter\Providers\LumenServiceProvider::class);
+$app->register(Bortoman\PrometheusExporter\Providers\LumenServiceProvider::class);
 ```
 
 #### Add an endpoint for the metrics
@@ -60,7 +58,7 @@ In `bootstrap/app.php`
 ```
 $app->router->get('/metrics', [
     'as' => 'metrics',
-    'uses' => 'gorerider\PrometheusExporter\Controllers\LumenMetricsController@metrics',
+    'uses' => 'Bortoman\PrometheusExporter\Controllers\LumenMetricsController@metrics',
 ]);
 ```
 
