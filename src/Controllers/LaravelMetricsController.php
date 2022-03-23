@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace gorerider\PrometheusExporter\Controllers;
+namespace Bortoman\PrometheusExporter\Controllers;
 
 use Illuminate\Routing\Controller;
 

@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace gorerider\PrometheusExporter\Providers;
+namespace Bortoman\PrometheusExporter\Providers;
 
 use Illuminate\Contracts\Http\Kernel as ContractKernel;
-use gorerider\PrometheusExporter\Middleware\PrometheusExporterMiddleware;
+use Bortoman\PrometheusExporter\Middleware\PrometheusExporterMiddleware;
 
 class LaravelServiceProvider extends AbstractServiceProvider
 {

@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace gorerider\Tests\Unit\Providers;
+namespace Bortoman\Tests\Unit\Providers;
 
-use gorerider\Tests\BaseTestCase;
+use Bortoman\Tests\BaseTestCase;
 use PHPUnit\Framework\MockObject\MockObject;
-use gorerider\PrometheusExporter\Providers\AbstractServiceProvider;
+use Bortoman\PrometheusExporter\Providers\AbstractServiceProvider;
 
 class AbstractServiceProviderTest extends BaseTestCase
 {
@@ -18,7 +18,7 @@ class AbstractServiceProviderTest extends BaseTestCase
             ->disableOriginalConstructor()
             ->onlyMethods(['getMemoryAdapter'])
             ->getMock();
-        
+
         $provider
             ->expects($this->once())
             ->method('getMemoryAdapter');
@@ -73,7 +73,7 @@ class AbstractServiceProviderTest extends BaseTestCase
             ->getMock();
 
         $this->expectException(\InvalidArgumentException::class);
-        
+
         $getAdapterMethod = $this->getMethod($class, 'getAdapter');
         $getAdapterMethod->invokeArgs($provider, ['unknown']);
     }

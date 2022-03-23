@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace gorerider\PrometheusExporter\Providers;
+namespace Bortoman\PrometheusExporter\Providers;
 
 use Prometheus\Storage\APC;
 use Prometheus\Storage\Redis;

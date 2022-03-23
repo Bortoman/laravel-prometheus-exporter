@@ -1,11 +1,11 @@
 <?php
 
-namespace gorerider\Tests\Component\Controllers;
+namespace Bortoman\Tests\Component\Controllers;
 
-use gorerider\Tests\BaseTestCase;
+use Bortoman\Tests\BaseTestCase;
 use Illuminate\Foundation\Http\Kernel;
 use Illuminate\Contracts\Http\Kernel as ContractKernel;
-use gorerider\PrometheusExporter\Providers\LaravelServiceProvider;
+use Bortoman\PrometheusExporter\Providers\LaravelServiceProvider;
 
 class MetricsControllerTest extends BaseTestCase
 {

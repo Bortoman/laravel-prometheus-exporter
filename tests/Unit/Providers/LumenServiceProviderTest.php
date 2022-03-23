@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace gorerider\Tests\Unit\Providers;
+namespace Bortoman\Tests\Unit\Providers;
 
 use Prometheus\Storage\InMemory;
-use gorerider\Tests\BaseTestCase;
+use Bortoman\Tests\BaseTestCase;
 use PHPUnit\Framework\MockObject\MockObject;
-use gorerider\PrometheusExporter\Providers\LumenServiceProvider;
+use Bortoman\PrometheusExporter\Providers\LumenServiceProvider;
 
 class LumenServiceProviderTest extends BaseTestCase
 {
@@ -17,7 +17,7 @@ class LumenServiceProviderTest extends BaseTestCase
             ->disableOriginalConstructor()
             ->onlyMethods(['getConfig', 'configureInstrumentation', 'getAdapter', 'registerCollectorRegistry'])
             ->getMock();
-        
+
         $provider
             ->expects($this->once())
             ->method('getConfig')

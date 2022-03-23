@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace gorerider\Tests;
+namespace Bortoman\Tests;
 
 use ReflectionMethod;
 use ReflectionException;

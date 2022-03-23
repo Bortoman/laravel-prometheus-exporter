@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace gorerider\PrometheusExporter\Controllers;
+namespace Bortoman\PrometheusExporter\Controllers;
 
 use Prometheus\RenderTextFormat;
 use Prometheus\Storage\InMemory;
 use Prometheus\CollectorRegistry;
-use gorerider\PrometheusExporter\Instrumentation\Collectible;
+use Bortoman\PrometheusExporter\Instrumentation\Collectible;
 
 trait MetricsTrait
 {

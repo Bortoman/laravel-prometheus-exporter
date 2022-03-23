@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace gorerider\PrometheusExporter\Providers;
+namespace Bortoman\PrometheusExporter\Providers;
 
-use gorerider\PrometheusExporter\Middleware\PrometheusExporterMiddleware;
+use Bortoman\PrometheusExporter\Middleware\PrometheusExporterMiddleware;
 
 class LumenServiceProvider extends AbstractServiceProvider
 {

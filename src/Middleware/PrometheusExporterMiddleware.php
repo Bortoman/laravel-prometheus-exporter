@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace gorerider\PrometheusExporter\Middleware;
+namespace Bortoman\PrometheusExporter\Middleware;
 
 use Closure;
 use Prometheus\Histogram;

@@ -1,6 +1,6 @@
 <?php
 
-namespace gorerider\PrometheusExporter\Instrumentation;
+namespace Bortoman\PrometheusExporter\Instrumentation;
 
 class Opcache extends AbstractCollector
 {

@@ -1,7 +1,7 @@
 <?php
 
-use gorerider\PrometheusExporter\Instrumentation\FPM;
-use gorerider\PrometheusExporter\Instrumentation\Opcache;
+use Bortoman\PrometheusExporter\Instrumentation\FPM;
+use Bortoman\PrometheusExporter\Instrumentation\Opcache;
 
 return [
     'adapter' => env('PROMETHEUS_EXPORTER_ADAPTER', 'memory'),

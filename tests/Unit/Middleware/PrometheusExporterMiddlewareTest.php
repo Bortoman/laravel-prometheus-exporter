@@ -1,16 +1,16 @@
 <?php
 declare(strict_types=1);
 
-namespace gorerider\Tests\Unit\Middleware;
+namespace Bortoman\Tests\Unit\Middleware;
 
 use Prometheus\Histogram;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Prometheus\CollectorRegistry;
-use gorerider\Tests\BaseTestCase;
+use Bortoman\Tests\BaseTestCase;
 use Illuminate\Http\JsonResponse;
 use PHPUnit\Framework\MockObject\MockObject;
-use gorerider\PrometheusExporter\Middleware\PrometheusExporterMiddleware;
+use Bortoman\PrometheusExporter\Middleware\PrometheusExporterMiddleware;
 
 class PrometheusExporterMiddlewareTest extends BaseTestCase
 {
