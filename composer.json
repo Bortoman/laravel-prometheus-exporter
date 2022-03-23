@@ -16,7 +16,7 @@
     "require": {
         "php" : "^7.4",
         "endclothing/prometheus_client_php": "^1.0",
-        "illuminate/support": "8.*|^7.22"
+        "illuminate/support": "8.*"
     },
     "require-dev": {
         "phpunit/phpunit": "^8.5",
