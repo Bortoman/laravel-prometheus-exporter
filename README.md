@@ -1,7 +1,7 @@
 # laravel-prometheus-exporter
 
 This is a fork of [traum-ferienwohnungen/laravel-prometheus-exporter](https://github.com/traum-ferienwohnungen/laravel-prometheus-exporter)
-with updated dependencies. Main goal of this work is to make the lib compatible with Laravel 7 and Lumen 7 running on PHP 7.4.
+with updated dependencies. Main goal of this work is to make the lib compatible with Laravel 8 and Lumen 8 running on PHP 7.4.
 
 ## Description
 A prometheus exporter for the Laravel and the Lumen web framework.
