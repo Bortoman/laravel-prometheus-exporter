@@ -14,8 +14,10 @@ class LaravelServiceProvider extends AbstractServiceProvider
             realpath(__DIR__.'/../config/config.php') => config_path('prometheus_exporter.php')]
         );
 
-        $this->app->make(ContractKernel::class)
-            ->pushMiddleware(PrometheusExporterMiddleware::class);
+        if (config('prometheus_exporter.export_all_requests')) {
+            $this->app->make(ContractKernel::class)
+                ->pushMiddleware(PrometheusExporterMiddleware::class);
+        }
 
         $this->loadRoutesFrom(realpath(__DIR__.'/../routes/routes.php'));
     }

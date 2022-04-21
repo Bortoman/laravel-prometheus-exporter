@@ -9,7 +9,8 @@ return [
         FPM::class,
         Opcache::class,
     ],
-    'namespace' => env('PROMETHEUS_EXPORTER_NAMESPACE', env('APP_NAME')),
+    'export_all_requests' => env('PROMETHEUS_EXPORT_ALL_REQUESTS', true),
+    'namespace' => env('PROMETHEUS_EXPORTER_NAMESPACE', 'laravel-prometheus-exporter'),
     'buckets' => [50, 100, 300, 500, 700, 900, 1000, 1200, 1500, 2000, 3000, 5000, 7500],
     'redis' => [
         'host' => env('PROMETHEUS_EXPORTER_REDIS_HOST', '127.0.0.1'),
